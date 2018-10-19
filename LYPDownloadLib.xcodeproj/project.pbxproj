@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D769B58A216EF10E00F0499D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B589216EF10E00F0499D /* AppDelegate.m */; };
+		D769B58D216EF10E00F0499D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B58C216EF10E00F0499D /* ViewController.m */; };
+		D769B590216EF10E00F0499D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D769B58E216EF10E00F0499D /* Main.storyboard */; };
+		D769B592216EF10F00F0499D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D769B591216EF10F00F0499D /* Assets.xcassets */; };
+		D769B595216EF10F00F0499D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D769B593216EF10F00F0499D /* LaunchScreen.storyboard */; };
+		D769B598216EF10F00F0499D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B597216EF10F00F0499D /* main.m */; };
+		D769B5A2216EF11000F0499D /* LYPDownloadLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B5A1216EF11000F0499D /* LYPDownloadLibTests.m */; };
+		D769B5AD216EF11000F0499D /* LYPDownloadLibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B5AC216EF11000F0499D /* LYPDownloadLibUITests.m */; };
+		D769B5BD216EF19E00F0499D /* LYPDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B5BC216EF19E00F0499D /* LYPDownloader.m */; };
+		D769B5C0216EF74100F0499D /* LYPFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B5BF216EF74100F0499D /* LYPFileTool.m */; };
+		D769B5C9216F3ED500F0499D /* LYPDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B5C8216F3ED500F0499D /* LYPDownloadManager.m */; };
+		D769B5CC216F40FC00F0499D /* NSString+LYPMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D769B5CB216F40FC00F0499D /* NSString+LYPMD5.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D769B59E216EF11000F0499D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D769B57D216EF10E00F0499D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D769B584216EF10E00F0499D;
+			remoteInfo = LYPDownloadLib;
+		};
+		D769B5A9216EF11000F0499D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D769B57D216EF10E00F0499D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D769B584216EF10E00F0499D;
+			remoteInfo = LYPDownloadLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D769B585216EF10E00F0499D /* LYPDownloadLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYPDownloadLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D769B588216EF10E00F0499D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D769B589216EF10E00F0499D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D769B58B216EF10E00F0499D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D769B58C216EF10E00F0499D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D769B58F216EF10E00F0499D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D769B591216EF10F00F0499D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D769B594216EF10F00F0499D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D769B596216EF10F00F0499D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D769B597216EF10F00F0499D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D769B59D216EF11000F0499D /* LYPDownloadLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYPDownloadLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D769B5A1216EF11000F0499D /* LYPDownloadLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPDownloadLibTests.m; sourceTree = "<group>"; };
+		D769B5A3216EF11000F0499D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D769B5A8216EF11000F0499D /* LYPDownloadLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYPDownloadLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D769B5AC216EF11000F0499D /* LYPDownloadLibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPDownloadLibUITests.m; sourceTree = "<group>"; };
+		D769B5AE216EF11000F0499D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D769B5BB216EF19E00F0499D /* LYPDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPDownloader.h; sourceTree = "<group>"; };
+		D769B5BC216EF19E00F0499D /* LYPDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPDownloader.m; sourceTree = "<group>"; };
+		D769B5BE216EF74100F0499D /* LYPFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPFileTool.h; sourceTree = "<group>"; };
+		D769B5BF216EF74100F0499D /* LYPFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPFileTool.m; sourceTree = "<group>"; };
+		D769B5C7216F3ED500F0499D /* LYPDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPDownloadManager.h; sourceTree = "<group>"; };
+		D769B5C8216F3ED500F0499D /* LYPDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPDownloadManager.m; sourceTree = "<group>"; };
+		D769B5CA216F40FC00F0499D /* NSString+LYPMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LYPMD5.h"; sourceTree = "<group>"; };
+		D769B5CB216F40FC00F0499D /* NSString+LYPMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYPMD5.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D769B582216EF10E00F0499D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D769B59A216EF11000F0499D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D769B5A5216EF11000F0499D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D769B57C216EF10E00F0499D = {
+			isa = PBXGroup;
+			children = (
+				D769B587216EF10E00F0499D /* LYPDownloadLib */,
+				D769B5A0216EF11000F0499D /* LYPDownloadLibTests */,
+				D769B5AB216EF11000F0499D /* LYPDownloadLibUITests */,
+				D769B586216EF10E00F0499D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D769B586216EF10E00F0499D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D769B585216EF10E00F0499D /* LYPDownloadLib.app */,
+				D769B59D216EF11000F0499D /* LYPDownloadLibTests.xctest */,
+				D769B5A8216EF11000F0499D /* LYPDownloadLibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D769B587216EF10E00F0499D /* LYPDownloadLib */ = {
+			isa = PBXGroup;
+			children = (
+				D769B5BA216EF16500F0499D /* DownloadClasses */,
+				D769B588216EF10E00F0499D /* AppDelegate.h */,
+				D769B589216EF10E00F0499D /* AppDelegate.m */,
+				D769B58B216EF10E00F0499D /* ViewController.h */,
+				D769B58C216EF10E00F0499D /* ViewController.m */,
+				D769B58E216EF10E00F0499D /* Main.storyboard */,
+				D769B591216EF10F00F0499D /* Assets.xcassets */,
+				D769B593216EF10F00F0499D /* LaunchScreen.storyboard */,
+				D769B596216EF10F00F0499D /* Info.plist */,
+				D769B597216EF10F00F0499D /* main.m */,
+			);
+			path = LYPDownloadLib;
+			sourceTree = "<group>";
+		};
+		D769B5A0216EF11000F0499D /* LYPDownloadLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				D769B5A1216EF11000F0499D /* LYPDownloadLibTests.m */,
+				D769B5A3216EF11000F0499D /* Info.plist */,
+			);
+			path = LYPDownloadLibTests;
+			sourceTree = "<group>";
+		};
+		D769B5AB216EF11000F0499D /* LYPDownloadLibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D769B5AC216EF11000F0499D /* LYPDownloadLibUITests.m */,
+				D769B5AE216EF11000F0499D /* Info.plist */,
+			);
+			path = LYPDownloadLibUITests;
+			sourceTree = "<group>";
+		};
+		D769B5BA216EF16500F0499D /* DownloadClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D769B5BB216EF19E00F0499D /* LYPDownloader.h */,
+				D769B5BC216EF19E00F0499D /* LYPDownloader.m */,
+				D769B5C7216F3ED500F0499D /* LYPDownloadManager.h */,
+				D769B5C8216F3ED500F0499D /* LYPDownloadManager.m */,
+				D769B5CA216F40FC00F0499D /* NSString+LYPMD5.h */,
+				D769B5CB216F40FC00F0499D /* NSString+LYPMD5.m */,
+				D769B5BE216EF74100F0499D /* LYPFileTool.h */,
+				D769B5BF216EF74100F0499D /* LYPFileTool.m */,
+			);
+			path = DownloadClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D769B584216EF10E00F0499D /* LYPDownloadLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D769B5B1216EF11000F0499D /* Build configuration list for PBXNativeTarget "LYPDownloadLib" */;
+			buildPhases = (
+				D769B581216EF10E00F0499D /* Sources */,
+				D769B582216EF10E00F0499D /* Frameworks */,
+				D769B583216EF10E00F0499D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYPDownloadLib;
+			productName = LYPDownloadLib;
+			productReference = D769B585216EF10E00F0499D /* LYPDownloadLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D769B59C216EF11000F0499D /* LYPDownloadLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D769B5B4216EF11000F0499D /* Build configuration list for PBXNativeTarget "LYPDownloadLibTests" */;
+			buildPhases = (
+				D769B599216EF11000F0499D /* Sources */,
+				D769B59A216EF11000F0499D /* Frameworks */,
+				D769B59B216EF11000F0499D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D769B59F216EF11000F0499D /* PBXTargetDependency */,
+			);
+			name = LYPDownloadLibTests;
+			productName = LYPDownloadLibTests;
+			productReference = D769B59D216EF11000F0499D /* LYPDownloadLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D769B5A7216EF11000F0499D /* LYPDownloadLibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D769B5B7216EF11000F0499D /* Build configuration list for PBXNativeTarget "LYPDownloadLibUITests" */;
+			buildPhases = (
+				D769B5A4216EF11000F0499D /* Sources */,
+				D769B5A5216EF11000F0499D /* Frameworks */,
+				D769B5A6216EF11000F0499D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D769B5AA216EF11000F0499D /* PBXTargetDependency */,
+			);
+			name = LYPDownloadLibUITests;
+			productName = LYPDownloadLibUITests;
+			productReference = D769B5A8216EF11000F0499D /* LYPDownloadLibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D769B57D216EF10E00F0499D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LYP;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = laiyongpeng;
+				TargetAttributes = {
+					D769B584216EF10E00F0499D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D769B59C216EF11000F0499D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D769B584216EF10E00F0499D;
+					};
+					D769B5A7216EF11000F0499D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D769B584216EF10E00F0499D;
+					};
+				};
+			};
+			buildConfigurationList = D769B580216EF10E00F0499D /* Build configuration list for PBXProject "LYPDownloadLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D769B57C216EF10E00F0499D;
+			productRefGroup = D769B586216EF10E00F0499D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D769B584216EF10E00F0499D /* LYPDownloadLib */,
+				D769B59C216EF11000F0499D /* LYPDownloadLibTests */,
+				D769B5A7216EF11000F0499D /* LYPDownloadLibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D769B583216EF10E00F0499D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D769B595216EF10F00F0499D /* LaunchScreen.storyboard in Resources */,
+				D769B592216EF10F00F0499D /* Assets.xcassets in Resources */,
+				D769B590216EF10E00F0499D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D769B59B216EF11000F0499D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D769B5A6216EF11000F0499D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D769B581216EF10E00F0499D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D769B58D216EF10E00F0499D /* ViewController.m in Sources */,
+				D769B598216EF10F00F0499D /* main.m in Sources */,
+				D769B5CC216F40FC00F0499D /* NSString+LYPMD5.m in Sources */,
+				D769B5C0216EF74100F0499D /* LYPFileTool.m in Sources */,
+				D769B5BD216EF19E00F0499D /* LYPDownloader.m in Sources */,
+				D769B58A216EF10E00F0499D /* AppDelegate.m in Sources */,
+				D769B5C9216F3ED500F0499D /* LYPDownloadManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D769B599216EF11000F0499D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D769B5A2216EF11000F0499D /* LYPDownloadLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D769B5A4216EF11000F0499D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D769B5AD216EF11000F0499D /* LYPDownloadLibUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D769B59F216EF11000F0499D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D769B584216EF10E00F0499D /* LYPDownloadLib */;
+			targetProxy = D769B59E216EF11000F0499D /* PBXContainerItemProxy */;
+		};
+		D769B5AA216EF11000F0499D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D769B584216EF10E00F0499D /* LYPDownloadLib */;
+			targetProxy = D769B5A9216EF11000F0499D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D769B58E216EF10E00F0499D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D769B58F216EF10E00F0499D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D769B593216EF10F00F0499D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D769B594216EF10F00F0499D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D769B5AF216EF11000F0499D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D769B5B0216EF11000F0499D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D769B5B2216EF11000F0499D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN43523GZM;
+				INFOPLIST_FILE = LYPDownloadLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "animal.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D769B5B3216EF11000F0499D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN43523GZM;
+				INFOPLIST_FILE = LYPDownloadLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "animal.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D769B5B5216EF11000F0499D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN43523GZM;
+				INFOPLIST_FILE = LYPDownloadLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = animal.LYPDownloadLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYPDownloadLib.app/LYPDownloadLib";
+			};
+			name = Debug;
+		};
+		D769B5B6216EF11000F0499D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN43523GZM;
+				INFOPLIST_FILE = LYPDownloadLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = animal.LYPDownloadLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYPDownloadLib.app/LYPDownloadLib";
+			};
+			name = Release;
+		};
+		D769B5B8216EF11000F0499D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN43523GZM;
+				INFOPLIST_FILE = LYPDownloadLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = animal.LYPDownloadLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYPDownloadLib;
+			};
+			name = Debug;
+		};
+		D769B5B9216EF11000F0499D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN43523GZM;
+				INFOPLIST_FILE = LYPDownloadLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = animal.LYPDownloadLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LYPDownloadLib;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D769B580216EF10E00F0499D /* Build configuration list for PBXProject "LYPDownloadLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D769B5AF216EF11000F0499D /* Debug */,
+				D769B5B0216EF11000F0499D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D769B5B1216EF11000F0499D /* Build configuration list for PBXNativeTarget "LYPDownloadLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D769B5B2216EF11000F0499D /* Debug */,
+				D769B5B3216EF11000F0499D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D769B5B4216EF11000F0499D /* Build configuration list for PBXNativeTarget "LYPDownloadLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D769B5B5216EF11000F0499D /* Debug */,
+				D769B5B6216EF11000F0499D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D769B5B7216EF11000F0499D /* Build configuration list for PBXNativeTarget "LYPDownloadLibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D769B5B8216EF11000F0499D /* Debug */,
+				D769B5B9216EF11000F0499D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D769B57D216EF10E00F0499D /* Project object */;
+}
